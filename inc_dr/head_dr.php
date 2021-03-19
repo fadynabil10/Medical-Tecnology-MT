@@ -13,41 +13,11 @@
 <link rel="stylesheet" type="text/css" href="../styles/main_styles.css">
 <link rel="stylesheet" href="../styles/profile-doctor.css" type="text/css"/>
 <link rel="stylesheet" href="../styles/external-table-doctor.css" type="text/css"/>
-    <style>
-        .main_nav {
-            margin-left: 50px;
-        }
-
-        .container-doctor{
-            height: auto;
-            margin-top: 180px;
-        }
-        td input[type = 'text'],
-        td input[type = 'number']{
-            padding:10px;
-            border-radius:10px;
-            outline:none;
-
-        }
-        td input[type = 'text']:hover,
-        td input[type = 'text']:focus,
-        td input[type = 'number']:hover,
-        td input[type = 'number']:focus{
-            border: 2px solid #20c997;
-        }
-                
-        .btn-myapp{
-            background-color: rgb(239,70,47,0.9);
-            border: none;
-            width: 42%;
-            text-transform: uppercase;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-left: 37%;
-        }
-        .btn-myapp:hover{
-            background-color: rgb(239,70,47);
-            border: none;
-        }
+   <style>
+    .table-content {
+        margin: 2% 0 24% 10%;
+        width: auto;
+       }
+    
     </style>
 </head>

@@ -30,23 +30,23 @@
 
 <?php
 
-include('./inc_index/head.php');
+include('./inc/head.php');
 
 include('./cred/init.php');
 
-include('./inc_index/header-top.php');
+include('./inc/header-top.php');
 
-include('./inc_index/home.php');
+include('./inc/home.php');
 
-include('./inc_index/best_c.php');
+include('./inc/best_c.php');
 
-include('./inc_index/why.php');
+include('./inc/why.php');
 
-include('./inc_index/our_services.php');
+include('./inc/our_services.php');
 
-include('./inc_index/offers.php');
+include('./inc/offers.php');
 
-include('./inc_index/footer.php');
+include('./inc/footer.php');
 
 ?>
 

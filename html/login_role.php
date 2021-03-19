@@ -47,15 +47,19 @@ include('../cred/init.php');
                     right: 0;
                 }
             </style>
-      </head>
+    </head>
     <body>
     <!--start form-->
         
        <div class="container-app" style='width: 600px;height: 500px;'>   
+                   
        <!-- start main form -->
+    
           <div class="form">
             <?php 
+
               include('./signin_d_role.php');
+
             ?>
               
         

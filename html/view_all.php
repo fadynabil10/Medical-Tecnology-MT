@@ -1,4 +1,6 @@
 <?php
+
+// include('./cred/init.php');
 if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERVER['SCRIPT_FILENAME'] ) ) {
 	/* 
 			Up to you which header to send, some prefer 404 even if 
@@ -15,6 +17,8 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 
 <?php 
 
+
+
 ?>
 <div class="table-responsive">
                     <table class="table v-middle">
@@ -22,7 +26,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
                             <tr class="bg-light">
                                 <th class="border-top-0">Doctor Name</th>
                                 <th class="border-top-0">Doctor Address</th>
-                                <th class="border-top-0">Doctor dr Speciality</th>
+                                <th class="border-top-0">Doctor Specialization</th>
                                 <th class="border-top-0">Doctor Degree</th>
                                 <th class="border-top-0">Doctor Phone</th>
                                 <th class="border-top-0">Doctor Vezita</th>
@@ -41,36 +45,51 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
                                             $result = query($sql);
                                             
                                             while($rows = fetching($result)){
-                                                echo "<tr><td>" . $rows['dr_name']; 
+                                            
+                                                // $strs = strtoupper($rows['p_name'][0].''.$rows['p_name'][1]);
 
                                                 $strs = explode(' ', $rows['dr_name']);
 
                                                 $strs2 =  strtoupper($strs[0][0] . $strs[1][0]);
                                                 
-                                                
+                                    echo "<tr><td style='width:20%;'>";        
                                     echo '<div class="d-flex align-items-center">';
                                     echo '<div class="m-r-10"><a class="btn btn-circle btn-info text-white">'.$strs2.'</a></div>';
+                                    if(empty($rows['dr_name'])){ 
+                                        echo "<marquee>User Added without information</marque>";
+                                     }else{
+                                        echo '<div style="color:red">'.$rows['dr_name'].'</div>';            
+
+                                     }
                                     echo '<div class="">';
                                     echo '<h4 class="m-b-0 font-16">';
                                             
-                                    echo '</h4>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '</td>';
+                                    echo  '</h4>';
+                                    echo  '</div>';
+                                    echo  '</div>';
+                                    echo  '</td>';
                                 
-                                    echo '<td>';
-                                    echo '<label class="label label-danger">'. $rows['dr_clinic_address'] . '</label>';
-                                    echo '</td>';
-                                    echo '<td>'. $rows['dr_specialization'] . '</td>';
-                                    echo '<td>'. $rows['dr_degree'] . '</td>';
-                                    echo '<td>'. $rows['phone'] . '</td>';
-                                    echo '<td>'. $rows['fees'] . '</td>';
-                                    echo '<td>'. $rows['bio'] . '</td>';
-                                    echo '<td>'.'<img with="80" height="80" src="'.$rows['img'].'" />' .'</td>';
-                                    echo '<td>'. $rows['area'] . '</td>';
-                                    echo '</tr>';
+                                echo '<td>';
+                                echo '<label class="label label-danger">'. $rows['dr_clinic_address'] . '</label>';
+                                echo  '</td>';
+                                echo '<td>'. $rows['dr_specialization'] . '</td>';
+                                echo '<td>'. $rows['dr_degree'] . '</td>';
+                                echo '<td>'. $rows['phone'] . '</td>';
+                                echo '<td>'. $rows['fees'] . '</td>';
+                                echo '<td>'. $rows['bio'] . '</td>';
+                                echo '<td>'.'<img width="45" height="50" style="  border-radius: 60%;" src="'.$rows['img'].'" />' .'</td>';
+
+                                echo '<td>'. $rows['area'] . '</td>';
+
+                           echo '</tr>';
+
+
                         }
-                        ?>    
+                        ?>
+
+            
+                            
+                            
                         </tbody>
                     </table>
                 </div>

@@ -1,0 +1,506 @@
+:root{
+  --form-height:700px;
+  --form-width: 900px;
+  /*  Sea Green */
+  --left-color: #9fdeaf;
+  /*  Light Blue  */
+  --right-color: #96dbe2;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.5px;
+    
+}
+
+.container-app{
+  width: var(--form-width);
+  height: var(--form-height);
+  position: relative;
+  margin: auto;
+  box-shadow: 2px 10px 40px rgba(22,20,19,0.4);
+  border-radius: 10px;
+  margin-top: 22px;
+}
+/* social icon */
+.socl{
+    text-align: center;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.socl ul{
+    list-style: none;
+    padding-left: 0;
+}
+.socl ul li {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #e6ebf1;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; 
+}
+
+.socl ul li:hover {
+  background: #57ccc3; 
+}
+
+.socl ul li:not(:last-of-type) {
+  margin-right: 10px; }
+
+.socl ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 38px;
+  text-align: center; }
+
+.socl ul li a i {
+  font-size: 20px;
+  color: #404040;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; }
+.socl .instagram:hover {
+    background-color: #fff;
+}
+.socl .instagram:hover i {
+    color: #E36A60;
+}
+.socl .facebook:hover {
+    background-color: #fff;
+}
+.socl .facebook:hover i {
+    color: #4267b2;
+}
+.socl .twitter:hover {
+    background-color: #fff;
+}
+.socl .twitter:hover i {
+    color: rgb(29, 161, 242);
+}
+/* 
+----------------------
+      Overlay
+----------------------
+*/
+.overlay{
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  background-image: linear-gradient(to right, var(--left-color), var(--right-color));
+  border-radius: 10px;
+  color: white;
+  clip: rect(0, 385px, var(--form-height), 0);
+}
+
+.open-sign-up{
+    animation: slideleft 1s linear forwards;
+}
+.open-sign-in{
+    animation: slideright 1s linear forwards;
+}
+.overlay .signup, .overlay .signin{
+  /*  Width is 385px - padding  */
+  --padding: 50px;
+  width: calc(385px - var(--padding) * 2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px var(--padding);
+  text-align: center;
+}
+
+#sign-up-form .labelgender{
+    display: block;
+    padding-right: 230px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+}
+#sign-up-form .labelbirthday{
+    display: block;
+    padding-right: 220px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+}
+#sign-up-form .date-size{
+    width: 200px;
+}
+.overlay .signup{
+  float: left;
+}
+.signin p span{
+    font-size: 15px;
+}
+.overlay-text-left-animation{
+    animation: text-slide-in-left 1s linear;
+}
+.overlay-text-left-animation-out{
+    animation: text-slide-out-left 1s linear;
+}
+
+.overlay .signin{
+  float:right;
+}
+
+.overlay-text-right-animation{
+    animation: text-slide-in-right 1s linear;
+}
+
+.overlay-text-right-animation-out{
+    animation: text-slide-out-right 1s linear;
+}
+
+
+.overlay h1{
+  margin: 0px 5px;
+  font-size: 2.1rem;
+}
+
+.overlay p{
+  margin: 20px 0px 30px;
+  font-weight: 200;
+}
+/* 
+------------------------
+      Buttons
+------------------------
+*/
+.switch-button, .control-button{
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.switch-button{
+  border: 2px solid;
+}
+
+.control-button{
+  border: none;
+  margin-top: 15px;
+}
+
+.switch-button:focus, .control-button:focus{
+  outline:none;
+}
+
+.control-button.up{
+  background-color: var(--left-color);
+  font-size: 14px ;
+}
+.control-button.up:hover{
+    background-color: #83af8e;
+    color: #fff;
+}
+.control-button.in{
+  background-color: var(--right-color);
+  font-size: 14px ;
+
+}
+.control-button.in:hover{
+    opacity: 0.9;
+    color: #fff;
+}
+/* 
+--------------------------
+      Forms
+--------------------------
+*/
+.form{
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form .signup, .form .signin{
+  --padding: 50px;
+  position:absolute;
+    /*  Width is 100% - 385px - padding  */
+  width: calc(var(--form-width) - 385px - var(--padding) * 2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px var(--padding);
+  text-align: center;
+}
+
+/* Sign in is initially not displayed */
+.form .signup{
+  display: none;
+}
+
+.form .signup{
+  left:0;
+}
+
+.form .signin{
+  right: 0;
+}
+
+.form-right-slide-in{
+  animation: form-slide-in-right 1s;
+}
+
+.form-right-slide-out{
+  animation: form-slide-out-right 1s;
+}
+
+.form-left-slide-in{
+  animation: form-slide-in-left 1s;
+}
+
+.form-left-slide-out{
+  animation: form-slide-out-left 1s;
+}
+
+.form .signup h1{
+  color: var(--right-color);
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.form .signin h1{
+  color: var(--left-color);
+  margin: 0 0 20px 0;
+    font-size: 40px;
+}
+
+.social-media-buttons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px;
+}
+
+.social-media-buttons .icon{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 7px;
+}
+
+.small{
+  font-size: 13px;
+  color: grey;
+  font-weight: 200;
+  margin: 5px;
+}
+
+.social-media-buttons .icon svg{
+  width: 25px;
+  height: 25px;
+}
+#sign-in-form{
+    margin-top: 20px;
+}
+#sign-in-form input, #sign-up-form .input-g{
+  margin: 12px;
+  font-size: 15px;
+  padding: 15px;
+  width: 260px;
+  border: 1px solid #404040;
+  color: #404040;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+  border-radius: 50px;
+  outline: none;
+}
+#sign-in-form input:hover,#sign-in-form input:focus-within{
+  border: solid 1px #57ccc3;
+  background-color: #fff;
+      outline: none;
+
+
+}
+#sign-up-form .input-g:hover,#sign-up-form .input-g:focus-within{
+  border: solid 1px #57ccc3;
+  background-color: #fff;
+      outline: none;
+
+
+}
+#sign-in-form input::placeholder{
+  letter-spacing: 1px;
+      outline: none;
+
+}
+.forgot-password{
+  font-size: 12px;
+  display: inline-block;
+  padding-bottom: 3px;
+  outline: none;
+
+}
+.forgot-password:hover{
+  cursor: pointer;
+  outline: none;
+}
+.forgot-password::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s;
+}
+
+.forgot-password:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/* 
+---------------------------
+    Animation
+---------------------------
+*/
+@keyframes slideright{
+  0%{
+    clip: rect(0, 385px, var(--form-height), 0);
+  }
+  30%{
+        clip: rect(0, 480px, var(--form-height), 0);
+  }
+  /*  we want the width to be slightly larger here  */
+  50%{
+     clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+  }
+  80%{
+         clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+  }
+  100%{
+     clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+  }
+}
+
+@keyframes slideleft{
+  100%{
+    clip: rect(0, 385px, var(--form-height), 0);
+  }
+  70%{
+        clip: rect(0, 480px, var(--form-height), 0);
+  }
+  /*  we want the width to be slightly larger here  */
+  50%{
+     clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+  }
+  30%{
+         clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+  }
+  0%{
+     clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+  }
+}
+
+@keyframes text-slide-in-left{
+  0% {
+    padding-left: 20px;
+  }
+  100% {
+    padding-left: 50px;
+  }
+}
+
+@keyframes text-slide-in-right{
+  0% {
+    padding-right: 20px;
+  }
+  100% {
+    padding-right: 50px;
+  }
+}
+
+@keyframes text-slide-out-left{
+  0% {
+    padding-left: 50px;
+  }
+  100% {
+    padding-left: 20px;
+  }
+}
+
+@keyframes text-slide-out-right{
+  0% {
+    padding-right: 50px;
+  }
+  100% {
+    padding-right: 20px;
+  }
+}
+
+@keyframes form-slide-in-right{
+  0%{
+    padding-right: 100px;
+  }
+  100%{
+    padding-right: 50px;
+  }
+}
+
+@keyframes form-slide-in-left{
+  0%{
+    padding-left: 100px;
+  }
+  100%{
+    padding-left: 50px;
+  }
+}
+
+@keyframes form-slide-out-right{
+  0%{
+    padding-right: 50px;
+  }
+  100%{
+    padding-right: 80px;
+  }
+}
+
+@keyframes form-slide-out-left{
+  0%{
+    padding-left: 50px;
+  }
+  100%{
+    padding-left: 80px;
+  }
+}

@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect("localhost", "root", "", "medical");
+$connection = mysqli_connect("localhost", "root", "", "medical_tec11");
 
 function confirm(){
     global $connection;

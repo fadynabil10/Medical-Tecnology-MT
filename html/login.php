@@ -12,8 +12,7 @@ include('../cred/init.php');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../styles/login.css" rel="stylesheet" type="text/css">
         <link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-   
-      </head>
+    </head>
     <body>
     <!--start form-->
         
@@ -45,6 +44,7 @@ include('../cred/init.php');
         
           <div class="form">
             <?php 
+
               include('../inc/signin_p.php');
             ?>
               
@@ -58,11 +58,10 @@ include('../cred/init.php');
                 <input type="text" placeholder="FirstName" class="input-g" name="f_name" />
                 <input type="text" placeholder="LastName"class="input-g" name="l_name"/>
                 <input type="email" placeholder="Email" class="input-g"  name="email"/> 
+                <input type="password" placeholder="Password" class="input-g" name="password"/><br>
                 <div class="labelgender">Gender</div>
                 <input type="radio" name="gender" value="male" checked> Male
                 <input type="radio" name="gender" value="female"> Female<br>
-
-                <input type="password" placeholder="Password" class="input-g" name="password"/><br>
                 <div class="labelbirthday">Birthday</div>
                 <input type="date" name="dob" class="input-g size"/>
 

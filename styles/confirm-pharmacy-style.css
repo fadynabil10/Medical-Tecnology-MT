@@ -22,12 +22,12 @@ a:hover {
 }
 
 .form {
-  background: #c1baba00;
+  background: #c1bdba;
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
   border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.18);
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 .tab-group {

@@ -1,5 +1,11 @@
 
 <?php
+
+// include('./inc/head.php');
+
+// include('./cred/init.php');
+
+// include('./inc/nav.php');
 if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERVER['SCRIPT_FILENAME'] ) ) {
 	/* 
 			Up to you which header to send, some prefer 404 even if 
@@ -11,16 +17,34 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 			die( header( 'location: login.php' ) );
 
 		}
-?>	 
+?>
+	 
 <div class="container">
+
+	
+
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3">
+
+	
 		<?php 
+		
+		
 		admin_add_user();
+
+		
+
+
+		
+		
+		
+		
 		?>
 							
+		</div>
 	</div>
-</div>
+
+
 
     	<div class="row">
 			<div class="col-md-6 col-md-offset-3">
@@ -29,7 +53,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 						<div class="row">
 							
 							<div class="col-xs-6">
-								<h1>Add User</h1>
+								<h1 style='margin-left:18px;'>Add User</h1>
 							</div>
 						</div>
 						<hr>
@@ -57,6 +81,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 											<option value="admin">admin</option>		
 										</select>
 									</div>
+
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
@@ -82,6 +107,9 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 			</div>
 
 		</div>
-	</div>	
+	</div>
+
+
+	
 </body>
 </html>

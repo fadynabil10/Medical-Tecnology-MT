@@ -1,3 +1,4 @@
 <?php 
+
 delete_doctor();
 ?>

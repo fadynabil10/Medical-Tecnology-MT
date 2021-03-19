@@ -11,5 +11,54 @@
 <link rel="icon" type="image/ico" href="../images/iconstwo.png" />
 <link rel="stylesheet" type="text/css" href="../styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
-</head>
+<style>
+    
+         .dropbtn {
+              color: white;
+              border: none;
+              cursor: pointer;
+              border-radius: 100%;
+              width: 60px;
+              height: 60px;
+              border: 2px solid #00d4d4;
+            }
+
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #2980B9;
+            }
+
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              z-index: 1;
+              left: -78%;
+              border-radius: 5px;
+            }
+
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown a:hover {background-color: #ddd;}
+
+            .show {display: block;}
+    .btn{
+        color: yellow
+    }
+    
+    </style>
+    </head>
+
 <body>

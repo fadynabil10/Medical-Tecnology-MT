@@ -8,7 +8,7 @@
     background-color: #f8f8f8;
 }
 .container-doctor{
-    height: auto;
+    height: 1500px;
     margin-top: 180px;
 }
 .main-section{
@@ -202,7 +202,7 @@ h4 .d-edit-icon{
 .btn-myapp{
     background-color: rgb(239,70,47,0.9);
     border: none;
-    width: 42%;
+    width: 25%;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;

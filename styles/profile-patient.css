@@ -73,8 +73,10 @@
     background-color: #fff;
     width: 100%;
     height: 600px;
+    margin: 0 15% 0 15%;
     border: 2px solid #f8f8f8;
     border-radius: 15px;
+
 }
 .title-bar{
     width: 100%;
@@ -142,9 +144,4 @@
 
 footer{
     display:none;
-}
-/*last edit */
-.personal-info{
-    margin: 70px 5% 70px 5%;
-    width: 75%;
 }

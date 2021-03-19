@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.super_container{
+    background-color: #f8f8f8;
+}
+.container-payment{
+    height: 500px;
+    margin-top: 180px;
+}
+.pay-box{
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+.main-row{
+    padding: 0 10% 0 10%;
+}
+.p1 button,
+.p2 button,
+.p3 button,
+.p4 button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.p1 button,
+.p1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    padding-right: 0;
+}
+.p2,
+.p2 button{
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+}
+.p3,
+.p3 button{
+    border: none;
+    outline: none;
+    padding: 0px;
+
+}
+
+.p4 button,
+.p4{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+}
+.p1 img,
+.p2 img,
+.p3 img,
+.p4 img{ 
+    width: 100%;
+    height: 100px;
+    border-radius: 5px
+}
+.p1 img{
+    padding-right: 5px
+}
+.p1,
+.p2,
+.p3,
+.p4{
+    border-right: 1px solid #f8f8f8;
+}
+/**/
+button {
+  position: relative;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* blue border */
+.draw {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #1010ef;
+  border-radius: 5px;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #1010ef;
+  border-right-color: #1010ef;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #1010ef;
+  border-left-color: #1010ef;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+/* blue border end*/
+/* second border start*/
+
+.draw-p2{
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.draw-p2::before, .draw-p2::after {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+}
+.draw-p2::before {
+  top: 0;
+  left: 0;
+}
+.draw-p2::after {
+  bottom: 0;
+  right: 0;
+}
+.draw-p2:hover {
+  color: rgb(0,154,221);
+  border-radius: 5px;
+}
+.draw-p2:hover::before, .draw-p2:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw-p2:hover::before {
+  border-top-color: rgb(0,154,221);
+  border-right-color: rgb(0,154,221);
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw-p2:hover::after {
+  border-bottom-color: rgb(0,154,221);
+  border-left-color: rgb(0,154,221);
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+/* secound border end*/ /*rgb(0,154,221)*/
+
+/* third border start*/
+
+.draw-p3{
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.draw-p3::before, .draw-p3::after {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+}
+.draw-p3::before {
+  top: 0;
+  left: 0;
+}
+.draw-p3::after {
+  bottom: 0;
+  right: 0;
+}
+.draw-p3:hover {
+  color: #fff;
+  border-radius: 5px;
+}
+.draw-p3:hover::before, .draw-p3:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw-p3:hover::before {
+  border-top-color: #fff;
+  border-right-color: #fff;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw-p3:hover::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+/* third border end*/ 
+
+/* four btn draw border */
+.draw-p4{
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.draw-p4::before, .draw-p4::after {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+}
+.draw-p4::before {
+  top: 0;
+  left: 0;
+}
+.draw-p4::after {
+  bottom: 0;
+  right: 0;
+}
+.draw-p4:hover {
+  color: rgb(0,108,147);
+  border-radius: 5px;
+}
+.draw-p4:hover::before,
+.draw-p4:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw-p4:hover::before {
+  border-top-color: rgb(0,108,147);
+  border-right-color: rgb(0,108,147);
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw-p4:hover::after {
+  border-bottom-color: rgb(0,108,147);
+  border-left-color: rgb(0,108,147);
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+/* four btn draw border */
+
+/* Page styling */
+
+.buttons {
+  isolation: isolate;
+}
+/************************************** form visa **************/
+input{
+    outline: none;
+}
+label{
+    font-weight: 600
+}
+.form-img{
+    padding: 0 5% 0 18%;
+}
+.form-img img{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    padding: 0 5% 0 5%;
+}
+.form-inline{
+    width: 100%;
+}
+.pt{
+    width: 50%;
+}
+.partone{
+    float: left;
+    overflow: hidden;
+}
+.parttwo{
+    float: right;
+    overflow: hidden;
+}
+.form-control-part{
+    width: 80%;
+    font-size: 12px
+}
+.pay-amount{
+    position: absolute;
+    top: 86%;
+    left: 5%;
+    right: 0;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(89,205,196);
+}
+.pay-amount p{
+    color: #fff;
+    font-size: 20px
+}
+/********************************************************************************/
+.part-T{
+    width: 50%;
+    height: 400px;
+    float: left;
+    padding-top: 23px;
+}
+.part-O{
+    width: 50%;
+    height: 400px;
+    float: right;
+}

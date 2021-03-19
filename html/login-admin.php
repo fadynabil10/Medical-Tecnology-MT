@@ -61,9 +61,9 @@ include('../cred/init.php');
            <?php
 
            
-       login_administrator();
-          
-?>
+            login_administrator();
+            
+            ?>
            
        <!-- start main form -->
         
@@ -80,6 +80,9 @@ include('../cred/init.php');
               </form>
             </div>
         <!-- end sign in form -->
+              
+
+        <!------End forget password------->
       </div>
       <!-- end main form -->
     </div>

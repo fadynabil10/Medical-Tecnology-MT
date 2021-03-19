@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.super_container{
+    background-color: #f8f8f8;
+}
+.container-report{
+    height: 1500px;
+    margin-top: 120px;
+}
+.print{
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    margin-left: 85%;
+    z-index: 1;
+    border-top: none
+}
+.print:focus,
+.print:active,
+.print:checked{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+.content{
+    width: 92%;
+    margin: 10% 0 10% 4%;
+    height: 1300px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+}
+.cw{
+    width: 92%;
+    height: auto;
+    margin: 5% 0 5% 4%;
+    padding: 0px;
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.dm{
+    width: 92%;
+    height: auto;
+    margin: 3% 0 5% 4%;
+    padding: 0px;
+    height: 750px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.cw .title{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(89,205,196)
+    
+}
+.cw .title p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+}
+.text{
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 74%;
+    min-height: 74%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.btn-w{
+    outline: none;
+    width: 35%;
+    font-weight: 600;
+    margin-left: 32%;
+    margin-bottom: 10%;
+    padding: 15px 0 15px 0;
+    background-color: rgb(237, 20, 91);
+    border: none;
+}
+.btn-w:hover{
+    background-color: rgb(237, 20, 91, 0.9);
+}
+
+.image-logo{
+    float: left;
+    padding: 20px;
+}
+.logo-text{
+    float: right;
+}
+.ic-logo{
+    width: 200px;
+    height: 100px;
+}
+.content-lf{
+    width: 100%;
+    padding-left: 20px;
+        height: auto;
+
+}
+.content-lf h5{
+    padding-bottom: 5px;
+    height: auto;
+
+}
+.content-text{
+    width: 100%;
+    height: auto;
+}
+.content-text p{
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 30px 50px;
+}

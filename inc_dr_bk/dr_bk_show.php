@@ -1,6 +1,6 @@
-<?php 
 
- show_doctors();
+            <?php 
 
-?>
+            show_doctors();
 
+            ?>

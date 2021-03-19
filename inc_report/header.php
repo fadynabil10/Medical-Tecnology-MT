@@ -1,3 +1,4 @@
+
 <?php
 
 if(isset($_GET['p_id']) && isset($_GET['dr_id'])){
@@ -8,6 +9,7 @@ if(isset($_GET['p_id']) && isset($_GET['dr_id'])){
     $p_id = '';
     $dr_id = '';
 }
+
 
 $sql_display_p_report = "SELECT f_name, l_name, address, mobile, gender, dob, doctor.dr_name, dr_specialization, date_of_exam, description, medicines from profile_patients 
 INNER JOIN medical_record ON profile_patients.id = medical_record.p_id
@@ -42,7 +44,7 @@ while($rows_display_report = fetching($display_report)){
 
     <div class="super_container">
     
-    <button type="button" id='pr' class="btn btn-primary btn-lg btn-block print" style="margin-top: 136px;" onclick="printFunction()" >Print</button>
+    <button type="button" id='pr' class="btn btn-primary btn-lg btn-block print" style="margin-top: 10%;" onclick="printFunction()" >Print</button>
    <div class="container-report">
         <div class="col-12 content">
             <div class="row">

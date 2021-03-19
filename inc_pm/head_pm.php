@@ -13,5 +13,26 @@
 <link rel="stylesheet" type="text/css" href="../styles/main_styles.css">
 <link rel="stylesheet" href="../styles/payment.css" type="text/css"/>    
 
+
+
+<style>
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+    .main_nav ul li:not(:last-child){
+        margin-right: 0;
+    }
+</style>
 </head>
 <body>

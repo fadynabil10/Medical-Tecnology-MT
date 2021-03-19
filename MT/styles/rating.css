@@ -1,0 +1,53 @@
+.super_container{
+    background-color: #f8f8f8;
+}
+.container-rating{
+    height: 800px;
+    margin-top: 18px;
+}
+.star {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    padding: 0 0.15em;
+}
+.rating{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+}
+.rating span{
+    font-size: 70px;
+    cursor: pointer;
+}
+.star.selected {
+    color: gold;
+}
+.screen-reader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.feedback-main{
+    width: 40%;
+    margin: 12% 5% 15% 30%;
+    border: 1px solid #333;
+    border-radius: 2%;
+    height: 600px;
+
+}
+.feedback-main .feedback-sub{
+    width: 80%;
+    margin: 10% 0% 10% 10%;
+    border: 1px solid #333;
+    height: 275px;
+    border-radius: 2%;
+}

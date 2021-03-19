@@ -26,15 +26,14 @@ small {
     color: #fcb708; 
 }
 
-#wrap{
-    
+.wrap{
   float: right;
-  margin:20px auto;
   display:inline-block;
   padding: 5px 5px;
+    margin-right: 3%;
 }
 
-#accordian .content button{
+.accordian .content button{
   display:block;
   background:#80c0ff;
   width:130px;

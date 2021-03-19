@@ -4,38 +4,49 @@
         <header class="header trans_400" id="headerlogo">
             <div class="header_content d-flex flex-row align-items-center jusity-content-start trans_400">
 
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <div><img src="../images/logoheader.png" title="medical tecnology logo" style="height: 81%"></div>
-                    </a>
+              <!-- Logo -->
+			<div class="logo">
+				<a href="index.php">
+					<div><img src="../images/logoheader.png" title="medical tecnology logo"></div>
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav" style="margin-left:5%;">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
+					<li><a href="index.php">Home</a></li>
+                    <li><a href="corona.php">Health awareness</a></li>
+					<li><a href="#BestCare ">Best Care</a></li>
+					<li><a href="#whych">Why choose us?</a></li>
+                    <li><a href="#Services">Services</a></li>
+					<li><a href="#offers">Offers</a></li>
+                    <li><a href="#Contactus">Contact us</a></li>
+
+				</ul>
+			</nav>
+            
+			<div class="header_extra d-flex flex-row align-items-center justify-content-end ml-auto">
+
+                
+                <div class="dropdown">
+                    
+                  <img src="../images/person.png" onclick="myFunction()" class="dropbtn"/>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="./profile_patient.php?id='.$id3.'">Profile Patients</a>  
+                    <a href="./Book-index.php?p_id='.$id3.'">Make appointment</a>  
+                    <a type="button" href="./confirm_booking.php?p_id='.$id3.'">Cancel appointment</a>  
+                    <a type="button" href="./medical_record.php?id='.$id3.'">My Medical Record</a>  
+                    <a href="../html/logout.php">logout</a>  
+                  </div>
                 </div>
 
-                <!-- Main Navigation -->
-                <nav class="main_nav">
-                    <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#BestCare">Best Care</a></li>
-                        <li><a href="index.html#whych">Why choose us?</a></li>
-                        <li><a href="index.html#Services">Services</a></li>
-                        <li><a href="index.html#offers">Offers</a></li>
-                        <li><a href="#Contactus">Contact us</a></li>
-
-                    </ul>
-                </nav>
-
-                <div class="header_extra d-flex flex-row align-items-center justify-content-end ml-auto">
-                    <div class="button header_button b2">
-                        <a href='#'>logout</a>
-                        
-                    </div>
-                <!-- Hamburger main icon display when minimize size of screen  -->
-                    <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                </div>
+            <!-- Hamburger main icon display when minimize size of screen  -->
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
 
             </div>
         </header>
-    <div class="container-rating">
+    <div class="container-rating" style="height:auto">
         <div class="row">
             <div class="col-12">
                 <div class="feedback-main" style="background-color: #fff">
@@ -67,13 +78,13 @@
                             </button>
 
                             <div class="form-group">
-                                <textarea style = 'width:95%;'class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonial"><?php echo "<h1>" . $something. "</h1>"; ?></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonial"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block btn-myapp" name="send_rate" style='outline: none;width: 55%;margin-top: 10px;padding: 15px 0 15px 0;background-color: rgb(89,205,196);border: none;text-align: center; margin-left: 18%;'>Send</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block btn-myapp" name="send_rate" style='outline: none; width: 85%; margin-top: 10px; padding: 15px 0 15px 0; background-color: rgb(89,205,196); border: none;'>Send</button>
                         </form>
                         
                     </div>
-                    <form class="rating-btn" id="product1" style="position: absolute; top: 68%; left: 18%; right: 0; bottom: 0;">
+                    <form class="rating-btn" id="product1" style="position: absolute; top: 60%; left: 18%; right: 0; bottom: 0;">
                         <button type="button" class="btn btn-primary btn-lg btn-block btn-myapp" style='outline: none; width: 80%; margin-top: 10px; padding: 15px 0 15px 0; background-color: rgb(89,205,196); border: none;'>Back to Profile</button>
                         <button type="button" class="btn btn-primary btn-lg btn-block btn-myapp" style='outline: none; width: 80%; margin-top: 10px; padding: 15px 0 15px 0; background-color: rgb(237,20,91); border: none;'>View Report</button>
                     </form>
@@ -84,63 +95,87 @@
         </div>
 
 
-<?php 
+        <?php 
 
 if(isset($_POST['send_rate'])){
+    
 
-  $something =
-    "<script>
-    function myFunction1(){
-    var x = document.querySelector('#star1');
-    var something = x.getAttribute('aria-pressed'); 
-     if (something == 'true') 
-    {
-     alert(1);
-    }
+
+$something = "<script>
+
+function myFunction1(){
+
+  var x = document.querySelector('#star1');
+  var something = x.getAttribute('aria-pressed'); 
+  if (something == 'true') 
+  {
+        alert(1);
+  }
         
-  }    
+}    
 
-  function myFunction2(){
+
+
+function myFunction2(){
   var x = document.querySelector('#star2');
   var something = x.getAttribute('aria-pressed'); 
-    if (something == 'true') 
-    {
-         alert(2);
-    }
-  }   
+  if (something == 'true') 
+  {
+        alert(2);
 
 
-  function myFunction3(){
-   var x = document.querySelector('#star3');
-   var something = x.getAttribute('aria-pressed'); 
-    if (something == 'true') 
-    {
+  }
+        
+}   
+
+
+function myFunction3(){
+  var x = document.querySelector('#star3');
+  var something = x.getAttribute('aria-pressed'); 
+  if (something == 'true') 
+  {
         alert(3);
 
-    }
+  }
         
-  }  
+}  
 
-  function myFunction4(){
-   var x = document.querySelector('#star4');
-   var something = x.getAttribute('aria-pressed'); 
-    if (something == 'true') 
-     {
+
+function myFunction4(){
+  var x = document.querySelector('#star4');
+  var something = x.getAttribute('aria-pressed'); 
+  if (something == 'true') 
+  {
         alert(4);
-    }
-        
-  }  
 
-  function myFunction5(){
-   var x = document.querySelector('#star5');
-   var something = x.getAttribute('aria-pressed'); 
-    if (something == 'true') 
-    {
-        alert(5);
-    }
+  }
         
- }   
-  </script>";
-     echo $something;
+}  
+
+function myFunction5(){
+  var x = document.querySelector('#star5');
+  var something = x.getAttribute('aria-pressed'); 
+  if (something == 'true') 
+  {
+        alert(5);
+
+  }
+        
+}      
+
+
+
+
+
+
+        </script>";
+
+
+
+        echo $something;
 }
+
+
+
+
 ?>

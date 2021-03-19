@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Medical Tecnology</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="medical tecnology">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles/login.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/ico" href="../images/iconstwo.png" />
+
+    </head>
+    <body>
+    <!--start form-->
+        
+       <div class="container-app">
+           
+          <div class="overlay" id="overlay">
+              <!-- start form move from left to rigth-->
+            <div class="signup" id="sign-up">
+              <h1>Welcome!</h1>
+              <p>
+                  To make an appointment<br><span>please sign up with your personal info</span></p>
+              <button class="switch-button" id="slide-right-button">Sign Up</button>
+
+            </div>
+      <!--end form move from left to rigth-->
+      <!--start form move from right to left-->
+              
+            <div class="signin" id="sign-in">
+                
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button class="switch-button" id="slide-left-button">Sign In</button>
+                
+            </div>
+              
+       <!--end form move from right to left-->
+          </div>
+           
+       <!-- start main form -->
+        
+          <div class="form">
+       <!-- sign in form -->
+            <div class="signin" id="sign-in-info">
+              <h1>Sign In</h1>
+    
+              <form id="sign-in-form">      
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <p class="forgot-password">Forgot your password?</p>
+                <button class="control-button in">Sign In</button>
+              </form>
+            </div>
+        <!-- end sign in form -->
+              
+        <!-- start sign up form -->
+              
+            <div class="signup" id="sign-up-info">
+              <h1>Sign Up</h1>
+                
+              <form id="sign-up-form">
+                  
+                <input type="text" placeholder="FirstName" class="input-g"/>
+                <input type="text" placeholder="LastName"class="input-g"/>
+                <input type="email" placeholder="Email" class="input-g"/>
+                <input type="password" placeholder="Password" class="input-g"/><br>
+                <div class="labelgender">Gender</div>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+                <div class="labelbirthday">Birthday</div>
+                <input type="text" name="bday" class="input-g size"/>
+                <button class="control-button up">Sign Up</button>
+                  
+              </form>
+
+            </div>
+            <!-- end sign up form -->
+
+      </div>
+      <!-- end main form -->
+    </div>
+        <script src="../js/login-signup.js" type="text/javascript"></script>
+ </body>
+</html>

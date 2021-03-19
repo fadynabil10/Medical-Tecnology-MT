@@ -16,5 +16,58 @@
 <link rel="stylesheet" type="text/css" href="../styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="../styles/login.css">    
 <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+    <style>
+        .intro_text {
+          margin-top: 10px; 
+          font-size: 20px; 
+        }
+        .intro_text ol{
+            margin-left: 30px;
+        }
+        .intro_text ol li {
+            
+        }
+        .dropbtn {
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #00d4d4;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+            left: -78%;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+        .milestone_text{font-size: 16px;}
+</style>
 </head>
 <body>

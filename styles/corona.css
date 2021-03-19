@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-corona{
+    width: 100%;
+    height: 4000px;
+}
+.contient-corona{
+    width: 100%;
+    height: 600px;
+}
+.contient-corona img{
+    width: 100%;
+    height: 100%;
+}
+.h-cont{
+    text-transform: uppercase;
+    position: absolute;
+    top: 33%;
+    color: #fff;
+    left: 40%;
+    font-weight: bold;
+    font-size: 42px;
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+}
+
+.ml15 .word {
+  display: inline-block;
+}
+/* section confirm number*/
+.section-confirmed{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-confirmed > div{
+    width: 22.2%;
+    height: 142px;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 18px;
+}
+.card {
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  transition: 0.8s;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0);
+    transition: 0.8s;
+}
+
+.number {
+  font-size: 35px;
+  font-weight: 500;
+    line-height: 1.5
+}
+.factor {
+  color: #a3a3a3;
+}
+
+
+.active {
+  box-shadow: 2px 3px 5px 0px black;
+}
+/*****************************************/
+
+.section-confirmed-graph{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.section-confirmed-graph > div{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+.section-advices{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 30px;
+}
+.section-advices h2{
+    width: 100%;
+    height: 100px;
+}
+.section-advices .content-advices{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.section-advices .content-advices > div{
+    width: 25%;
+    height: 400px;
+    text-align: center;
+}
+.content-advices div img{
+    width: 80%;
+    height: 70%;
+}
+.h-advices{
+    background-color: rgb(35,147,210);
+    color: #fff;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 20px;
+    width: 30%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    
+}
+.section-advices  p{
+    padding-top: 20px;
+    font-size: 22.5;
+    font-family: cursive;
+    color: #1818ff;
+}
+/* video */
+.section-video{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-video div{
+    width: 100%;
+    height: 500px;
+    margin: 10px 5%;
+    box-shadow: 5px 10px 10px 2px #888;
+    
+}
+
+/* Scroll animations styles */
+
+.scroll-animations {
+  display: flex;
+}
+
+.scroll-animations div {
+  flex-grow: 1;
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  color: #333;
+}
+
+.scroll-animations div span {
+  font-size: 4em;
+  color: #5AA9E0;
+}
+
+.scroll-animations div h3 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+/*********************/

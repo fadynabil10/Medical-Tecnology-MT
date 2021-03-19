@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    height: auto;
+    margin-top: 160px;
+}
+.cont .info{
+    width: 100%;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    padding: 20px 0 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+.info span{
+    padding-left: 40px;
+
+}
+.info h5{
+    padding-top: 20px;
+}
+.table tr a{
+    text-decoration: none;
+}
+.table tr a:hover{
+    outline: none;
+    cursor: pointer;
+
+}
+.inf .row{
+    width: 40%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f8f8f8;
+}
+.inf .row:last-child{
+    border-bottom: none;
+
+}

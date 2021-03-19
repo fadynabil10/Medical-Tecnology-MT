@@ -1,0 +1,30 @@
+*{
+
+    padding:0px;
+    margin:0px;
+}
+
+
+body{
+    background-color: gray;
+}
+.container{
+  margin: 5%;
+}
+/* input[type="submit"]{
+    border: 1px solid orangered;
+} */
+
+
+.output{
+    border: 1px solid orangered;
+    overflow: scroll;
+    width: 1000px !important;
+    height:500px;
+}
+
+.input{
+    border: 1px solid orangered;
+    width: 1000px !important;
+    height:100px;
+}

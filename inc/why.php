@@ -16,7 +16,10 @@
 							<div class="section_title"><h2>Why choose us?</h2></div>
 						</div>
 						<div class="why_text">
-							<p>Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feugiat bibendum orci, non elementum urna vestibulum in. Nulla facilisi. Nulla egestas vel lacus sed interdum. Sed mollis, orci elementum eleifend tempor, nunc libero porttitor tellus, vel pharetra metus dolor.</p>
+							<p>
+                                We are guided by the principle that people deserve faster, better medical care.
+                                We provide a level of VIP treatment that we believe every patient not only deserves, but should always expect.
+                            </p>
 						</div>
 						<div class="why_list">
 							<ul>
@@ -27,8 +30,7 @@
 										<div class="icon"><img src="../images/icon_1.svg" alt="https://www.flaticon.com/authors/prosymbols"></div>
 									</div>
 									<div class="why_list_content">
-										<div class="why_list_title">Only Top Products</div>
-										<div class="why_list_text">Etiam ac erat ut enim maximus accumsan vel ac nisl</div>
+										<div class="why_list_title">Health and Wellbeing services</div>
 									</div>
 								</li>
 
@@ -39,7 +41,6 @@
 									</div>
 									<div class="why_list_content">
 										<div class="why_list_title">The best Doctors</div>
-										<div class="why_list_text">Ac erat ut enim maximus accumsan vel ac</div>
 									</div>
 								</li>
 
@@ -50,11 +51,39 @@
 									</div>
 									<div class="why_list_content">
 										<div class="why_list_title">Great Feedback</div>
-										<div class="why_list_text">Etiam ac erat ut enim maximus accumsan vel</div>
 									</div>
 								</li>
 
 							</ul>
+						</div>
+                        <div class="milestones">
+							<div class="row milestones_row">
+							
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<p class="milestone_counter" data-end-value="2000" data-sign-before="+">+2000</p>
+										<div class="milestone_text">Recovery Cases</div>
+									</div>
+								</div>
+
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="400" data-sign-before="+">+400</div>
+										<div class="milestone_text">Reservation cases</div>
+									</div>
+								</div>
+
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="200" data-sign-before="+">+200</div>
+										<div class="milestone_text">Users number</div>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>

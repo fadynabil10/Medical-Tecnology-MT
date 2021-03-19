@@ -1,4 +1,11 @@
+
 <?php
+
+// include('./inc/head.php');
+
+// include('./cred/init.php');
+
+// include('./inc/nav.php');
 if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERVER['SCRIPT_FILENAME'] ) ) {
 	/* 
 			Up to you which header to send, some prefer 404 even if 
@@ -7,12 +14,15 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 			header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
 
 			/* choose the appropriate page to redirect users */
-			die( header( 'location: login_role.php' ) );
+			die( header( 'location: login.php' ) );
 
-}
+		}
+
 ?>
 	 
 <div class="container">
+
+
 	
 <?php 
 update_doctor();
@@ -43,6 +53,9 @@ update_doctor();
                 $bio = $rows_doctor['bio'];
                 $img = $rows_doctor['img'];
                 $area = $rows_doctor['area'];
+				$dr_day_1 = $rows_doctor['day_1'];
+				$dr_day_2 = $rows_doctor['day_2'];
+				$dr_day_3 = $rows_doctor['day_3'];
 
             }
         
@@ -111,7 +124,18 @@ update_doctor();
                                     
 
 
-                                    
+                                    <div class="form-group">
+									<input type="datetime-local" class="form-control"  value="<?php $day_1_date = date("y-m-d H:M:S"); echo $day_1_date; ?>" name="day_1" />
+									</div>
+
+
+                                    <div class="form-group">
+									<input type="datetime-local" class="form-control"  value="<?php $day_2_date = date("y-m-d H:M:S"); echo $day_2_date; ?>" name="day_2" />
+									</div>
+
+									<div class="form-group">
+									<input type="datetime-local" class="form-control"  value="<?php $day_3_date = date("y-m-d H:M:S"); echo $day_3_date; ?>" name="day_3" />
+									</div>
 
                                     <div class="form-group">
 										<input type="text" name="area" id="email" tabindex="1" class="form-control"  value="<?php echo $area; ?>" placeholder="Doctor Area">

@@ -3,18 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Code</title>
+    <title>booking</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../styles/booking-style.css">
+    <link rel="icon" type="image/ico" href="../images/iconstwo.png" />
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap-4.1.2/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../styles/main_styles.css">
     <link rel="stylesheet" href="../styles/profile-doctor-for-patiant.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+
     <style>
 
+#notzisweek {
+  opacity: 0;
+  animation: blinking 2s linear infinite;
+  float:right;
+  margin-right: 100px;
+  margin-top:100px;
+  color:red;
+}
 
-        .container-book {
-            margin: 0 25%;
+@keyframes blinking {
+  from,
+  49.9% {
+    opacity: 0;
+  }
+  50%,
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+#notzisday {
+  opacity: 0;
+  animation: blinking 2s linear infinite;
+  float:right;
+  margin-right: 300px;
+}
+
+@keyframes blinking {
+  from,
+  49.9% {
+    opacity: 0;
+  }
+  50%,
+  to {
+    opacity: 1;
+  }
+}
+
+
+.container-book {
+            margin: 0 20%;
         }
 
         header {
@@ -26,13 +70,14 @@
         }
 
         .filter-part {
-            /* width: 100%; */
+            width: 100%;
             overflow: hidden;
+            display: inline-block;
         }
 
-        /* .filter-part select {
+        .filter-part select {
             width: 26%;
-        } */
+        }
 
         .filter-container .filter-part .form-control {
             margin-top: 10px;
@@ -43,7 +88,7 @@
         }
 
         .profile-info .star {
-            font-size: 25px;
+            font-size: 17px;
         }
 
         .profile-info h5 span {
@@ -54,11 +99,11 @@
             margin-right: 10px;
         }
 
-        #warp {
-            margin: 10% 20%;
+        .warp {
+            float: right;
+            margin: 20px auto;
             display: inline-block;
-            padding: 5px;
-            text-align: center;
+            padding: 5px 5px;
         }
 
         .main-section {
@@ -88,7 +133,7 @@
             margin-top: 0;
         }
 
-        #accordian .content button {
+        .accordian .content button {
             background-color: red;
             border: none;
             border-top-left-radius: 0;
@@ -135,8 +180,88 @@
         select {
             cursor: pointer;
         }
+        .doctor-list{
+            box-shadow: 3px 3px 5px 2px #333;
+            border-radius: 5px;
+        }        
+
+
+  
+    #times_last{
+
+        opacity: 0;
+  animation: blinking 2s linear infinite;
+  float:right;
+  margin-right: 100px;
+  margin-top:100px;
+  color:red;
+
+    }
+
+
+         .dropbtn {
+              color: white;
+              border: none;
+              cursor: pointer;
+              border-radius: 100%;
+              width: 60px;
+              height: 60px;
+              border: 2px solid #00d4d4;
+            }
+
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #2980B9;
+            }
+
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              z-index: 1;
+              left: -78%;
+              border-radius: 5px;
+            }
+
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown a:hover {background-color: #ddd;}
+
+            .show {display: block;}
+
+
+/**********************/
+        .button-book{
+            background-color: yellow
+        }
+
+
     </style>
 
 </head>
 
+
+
+
 <body>
+
+<script>
+function question(){
+    var confirms = confirm('Are you sure to book this day with this doctor');
+    if(confirms){
+        window.location.href='http://localhost/group_project/MT/inc_dr_bk/booking_dr.php?id=&spec=&date=&day=Sunday';
+    }
+}
+</script>

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f8f8;
+
+}
+.container-booking{
+    height: 600px;
+    margin-top: 180px;
+}
+
+.left{
+    width: 100%;                          
+    max-height: 500px;
+    min-height: 500px;
+    padding: 20px;
+}
+.left .left-content{
+    padding: 30px 0 30px 85px;
+    height: inherit;
+    line-height: 1.7;
+    margin-left: 20px;
+    background-color: #ececec;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+
+}
+.left .left-content .row{
+    border-bottom: 2px solid #f8f8f8;
+    width: 95%
+}
+.left .left-content .row:last-child{
+    border-bottom: none;
+}
+.left .left-content span{
+    padding-left: 80px
+        
+}
+.left .left-content h6{
+    padding-top: 30px
+}
+.left .left-content h6:last-child{
+    padding-bottom: 20px;
+
+}
+.countform-register span{
+    color: red;
+    font-size: 1rem;
+}
+.btn-start{
+    padding-top: 20px;
+    display: none;
+
+}
+.btn-start .btn-s{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+.btn-Cancel{
+    padding-top: 20px;
+
+}
+/**************************************************************/
+.right{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+}
+.right .right-content{
+    width: 95%;
+    height: 300px;
+    text-align: center;
+    background-image: url(../images/lls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #888;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+    background-color: #fff;
+
+}
+.right .right-content h4{
+   position: absolute;
+    top: 199px;
+    left: -226px;
+    right: 50px;
+    font-size: 18px;
+    color: #59cdc4;
+    font-weight: bold
+}
+.right h6{
+    padding-top: 20px;
+}
+
+.right-doc{
+    width: 91%;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    background-color: #ececec;
+    line-height: 1.7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    background-color: #fff;
+
+}
+.right-doc span{
+    padding-left: 80px
+}
+.right-doc .row{
+    border-bottom: 2px solid #f8f8f8;
+    padding-bottom: 10px;
+    width: 100%
+}
+.right-doc .row:last-child{
+        border-bottom: none;
+}
