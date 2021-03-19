@@ -1,0 +1,46 @@
+.btn-book-ex{
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    cursor: pointer;
+    background-color: rgb(47,189,81);
+    color: #fff;
+    
+}
+.btn-booked-ex{
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    
+}
+.sub-table-ex{
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+}
+.sub-table-ex p{
+    padding: 2px 0 2px 0;
+    background-color: #57ccc3;
+    color: #fff;
+    font-size: 18px
+}
+.sub-col-text-ex{
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+.time-content-ex{
+    background-color: #f8f8f8;
+}
+.time-content-ex div{
+    padding: 10px 0 10px 0;
+}
+.m-content-ex{
+    width: 145%;
+    height: 415px;
+}
+.md-ex{
+    max-width: 40%;
+    margin-right: 38%;
+}

@@ -1,0 +1,159 @@
+/* Full-width input fields */
+.username, .password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #404040;
+  color: #404040;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+  outline: none;
+}
+.username:hover,
+.username:focus-within,
+.password:hover,
+.password:focus-within{
+  border: solid 1px #57ccc3;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.btn-signin {
+  background-color: #57ccc3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.btn-signin:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.Create-account {
+  width: auto;
+  padding: 10px 18px;
+  border: none;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 25px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+
+}
+.Create-account:hover {
+    border-color: #13ba18;
+    color: #13ba18;
+}
+/* Center the image and position the close button */
+.close-form {
+  text-align: center;
+  position: relative;
+}
+.close-form span{
+    font-size: 42px;
+    font-weight: bold;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.signin-container{
+  padding: 20px 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;    
+}
+.psw a{
+    color: #c00;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* The Model (background) */
+.model {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.76); /* Black w/ opacity */
+  padding-top: 60px;
+  outline: none;  
+
+}
+
+/* Model Content/Box */
+.model-content {
+    
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border-radius: 25px;
+  overflow: hidden; 
+  width: 27%;
+  z-index: 1;
+}
+.model-content .headertitle{
+    text-align: center;
+    color: #57ccc3;
+    padding-top: 40px;
+    font-size: 37px;
+    
+}
+/* The Close Button (x) */
+.closedbtn {
+  position: absolute;
+  right: 15px;
+  top: -12px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 15px;
+  color: #333;
+}
+
+.closedbtn:hover,
+.closedbtn:focus {
+  color: #f40909;
+  cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+.animated {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .Create-account {
+     width: 100%;
+  }
+}
